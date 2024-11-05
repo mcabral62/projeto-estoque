@@ -14,5 +14,4 @@ public abstract class BaseFakeDB<TDominio> {
     public BaseFakeDB() {
         this.preencherDados();
     }
-
 }

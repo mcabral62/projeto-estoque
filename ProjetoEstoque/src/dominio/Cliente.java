@@ -1,33 +1,51 @@
 package dominio;
 
-public class Cliente extends BaseCliente {
-    private int codigoSubClasse;
-    private double valor;
+public class Cliente {
+    protected int codigo;
+    protected String nome;
+    protected String email;
+    protected String telefone;
 
-    public int getCodigoSubClasse() {
-        return codigoSubClasse;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setCodigoSubClasse(int codigoSubClasse) {
-        this.codigoSubClasse = codigoSubClasse;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
-    public double getValor() {
-        return valor;
+    public String getNome() {
+        return nome;
     }
 
-    public void setValor(double valor) {
-        this.valor = valor;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public Cliente() {
-        super();
     }
 
-    public Cliente(int codigo, String nome, String email, String telefone, int codigoSubClasse, double valor) {
-        super(codigo, nome, email, telefone);
-        this.codigoSubClasse = codigoSubClasse;
-        this.valor = valor;
+    public Cliente(int codigo, String nome, String email, String telefone) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
     }
 
 }

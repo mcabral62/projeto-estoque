@@ -1,6 +1,6 @@
 package dominio;
 
-public class ClasseCliente extends BaseCliente {
+public class ClasseCliente extends Cliente {
     public String getTelefone;
 
     public ClasseCliente() {
