@@ -2,19 +2,19 @@ package repositorio;
 
 import java.util.ArrayList;
 
-public abstract class BaseRepositorio<T> {
+public abstract class BaseRepositorio<TDominio> {
 
-    protected ArrayList<T> dados;
+    protected ArrayList<TDominio> dados;
 
-    public ArrayList<T> getTabela() {
+    public ArrayList<TDominio> getTabela() {
         return dados;
     }
 
-    public abstract T Read(int chave);
+    public abstract TDominio Read(int chave);
 
-    public abstract T Edit(T instancia);
+    public abstract TDominio Edit(TDominio instancia);
 
-    public abstract T Add(T instancia);
+    public abstract TDominio Add(TDominio instancia);
 
-    public abstract T Delete(int chave);
+    public abstract TDominio Delete(int chave);
 }
